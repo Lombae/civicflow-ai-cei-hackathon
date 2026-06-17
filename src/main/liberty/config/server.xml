@@ -1,0 +1,16 @@
+<server description="Dukes Data Demo">
+    <featureManager>
+        <platform>jakartaee-11.0</platform>
+        <feature>restfulWS</feature>
+        <feature>jsonb</feature>
+        <feature>jsonp</feature>
+        <feature>cdi</feature>
+        <feature>mpConfig-3.1</feature>
+        <feature>expressionLanguage</feature>
+    </featureManager>
+
+    <httpEndpoint id="defaultHttpEndpoint"
+                  httpPort="8080"/>
+    <webApplication location="clepsammia.war" contextRoot="/clepsammia"/>
+
+</server>

@@ -1,0 +1,11 @@
+### Analyze
+POST http://localhost:8080/clepsammia/api/hourglass/analyze
+Content-Type: application/json
+Accept: application/json
+
+{
+  "domain": "retail",
+  "useCase": "Analyze sales trends and identify seasonal demand patterns"
+}
+###
+
