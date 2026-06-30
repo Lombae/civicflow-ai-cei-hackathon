@@ -18,7 +18,6 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 @Path("/hourglass")
-
 public class HourglassResource {
 
     @Inject
