@@ -10,16 +10,17 @@
 package dukes.hourglass;
 
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
 @ApplicationScoped
 public class HourglassService {
 
-    // Inject the AI Service/Client configured via langchain4j-cdi or similar
+    // AI Service registrata da langchain4j-cdi (@RegisterAIService): incapsula prompt,
+    // chiamata all'LLM (con il tool degli standard) e mapping in HourglassOutput.
+    @Inject
+    private HourglassModeler modeler;
 
     public HourglassOutput process(HourglassInput input) {
-        // 1. Construct the prompt
-        // 2. Call the augmented LLM
-        // 3. Parse the result into HourglassOutput
-        return new HourglassOutput();
+        return modeler.analyze(input.getDomain(), input.getUseCase());
     }
 }

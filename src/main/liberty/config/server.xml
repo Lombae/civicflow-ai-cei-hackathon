@@ -5,6 +5,7 @@
         <feature>jsonb</feature>
         <feature>jsonp</feature>
         <feature>cdi</feature>
+        <feature>beanValidation</feature>
         <feature>mpConfig-3.1</feature>
         <feature>expressionLanguage</feature>
     </featureManager>

@@ -1,0 +1,15 @@
+
+# Local secrets (OpenAI key) - never commit
+src/main/liberty/config/server.env
+
+# Local secrets (API keys) - never commit
+.env.local
+
+# Build output - never commit
+target/
+
+# OS / editor junk
+.DS_Store
+
+# Office temp/lock files (e.g. ~$Presentation.pptx)
+~$*

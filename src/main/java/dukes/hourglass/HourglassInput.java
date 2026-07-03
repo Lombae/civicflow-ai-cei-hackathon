@@ -9,8 +9,14 @@
  ********************************************************************************/
 package dukes.hourglass;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class HourglassInput {
+
+    @NotBlank
     private String domain;
+
+    @NotBlank
     private String useCase;
 
     public String getDomain() {
