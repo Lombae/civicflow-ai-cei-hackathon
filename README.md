@@ -1,5 +1,37 @@
 # CivicFlow AI — Jakarta EE Hourglass AI Modeler
 
+> **From green ambition to interoperable action.**
+
+## Objective
+
+**The problem is real.** Take Bosa, Sardinia: a small coastal municipality with green ambitions.
+Regional transition funds were available, EU green-mobility programmes were open, the budget existed —
+the opportunity was real and time-bound. Yet the funds could not be accessed, because **there was no
+credible, structured project architecture**. The bottleneck was never the ambition; it was the
+**missing technical map** that ties together many actors and fragmented systems (transport APIs,
+charging protocols, payments, data platforms) with no shared standards and no pilot-ready plan.
+
+**Our goal.** CivicFlow AI is a **specialized agent for municipal green mobility** (public transport,
+EV charging, energy actors, citizens, data platforms) that turns *"we have funds"* into a **shared
+technical map** a city can actually build a pilot on. It produces an **hourglass model** — many
+stakeholders and capabilities converging on a narrow waist of interoperability standards — as
+structured JSON. The design principle is **real, not generic**: every output is grounded in **verified
+standards** and **real local data**, and a guardrail rejects anything invented.
+
+**What CivicFlow generates for a city:**
+
+- **Stakeholders** — municipality, transport operators, energy providers, EV networks, citizens,
+  payment systems, data platforms. Every actor that matters, mapped automatically.
+- **Shared capabilities** — multimodal routing, ticketing, EV charging, identity, real-time data,
+  demand response: the minimum shared core that makes interoperability possible.
+- **Standards + JSON** — the narrow waist (TOMP-API, GTFS, OCPP, OCPI, OpenADR, SIRI, GBFS…),
+  **verified not invented**, as structured JSON that's ready to consume, extend, and reuse.
+
+**Why it matters for pilots:** it compresses the first-architecture phase **from weeks of manual
+analysis to seconds**, gives municipalities, technical teams, and funding bodies a **common language**
+to align on, and leaves behind a **reusable starting point** — scaling from one city, to a region, to
+cross-border infrastructure, all open-source.
+
 ## Challenge
 
 This is a template project for the Jakarta EE Hourglass AI Modeler challenge.
@@ -69,21 +101,25 @@ mvn clean package
 ### 2. Run on Your Preferred Server
 
 #### GlassFish
+
 ```bash
 mvn clean package cargo:run -Pglassfish
 ```
 
 #### Payara
+
 ```bash
 mvn clean package cargo:run -Ppayara
 ```
 
 #### WildFly
+
 ```bash
 mvn clean package wildfly:run
 ```
 
 #### Open Liberty
+
 ```bash
 mvn clean package liberty:run
 ```
@@ -91,5 +127,3 @@ mvn clean package liberty:run
 ### 3. Test the Server
 
 Smoke-test endpoint: `http://localhost:8080/clepsammia/api/hello`
-
-
