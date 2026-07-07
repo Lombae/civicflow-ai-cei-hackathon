@@ -13,8 +13,8 @@ charging protocols, payments, data platforms) with no shared standards and no pi
 
 **Our goal.** CivicFlow AI is a **specialized agent for municipal green mobility** (public transport,
 EV charging, energy actors, citizens, data platforms) that turns *"we have funds"* into a **shared
-technical map** a city can actually build a pilot on. It produces an **hourglass model** — many
-stakeholders and capabilities converging on a narrow waist of interoperability standards — as
+technical map** a city can actually build a pilot on. It produces an **hourglass model** many
+stakeholders and capabilities converging on a narrow waist of interoperability standards as
 structured JSON. The design principle is **real, not generic**: every output is grounded in **verified
 standards** and **real local data**, and a guardrail rejects anything invented.
 
